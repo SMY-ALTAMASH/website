@@ -1,0 +1,18 @@
+centos
+
+apache:
+add:
+yum install httpd
+service httpd start
+
+remove:
+yum remove httpd
+
+
+php:
+add:
+yum install php php-mysql
+service httpd restart
+
+remove:
+yum remove php php-common php-devel
